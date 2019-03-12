@@ -39,4 +39,11 @@
 * [print](print.md)
 * [save](save.md)
 * [search](search.md)
+  * [searchBetweenDate](search/searchbetweendate.md)
+  * [searchDate](search/searchdate.md)
+  * [searchYesNo](search/searchyesno.md)
+* [selectOneMenu](selectonemenu.md)
+* [sexo](sexo.md)
+* view
+* [yesno](yesno.md)
 
