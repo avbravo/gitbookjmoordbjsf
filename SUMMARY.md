@@ -35,4 +35,6 @@
 * noyes
 * [paginator](paginator.md)
   * [paginatorReport](paginator/paginatorreport.md)
+* [password](password.md)
+* [print](print.md)
 
