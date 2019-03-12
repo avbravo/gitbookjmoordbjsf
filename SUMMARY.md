@@ -10,6 +10,7 @@
 * [template](template.md)
   * [csstemplate](template/csstemplate.md)
   * [jstemplate](template/jstemplate.md)
+  * metatemplate
 * date
 * denegado
 * edit
@@ -26,4 +27,12 @@
   * labelNumber
   * labelPago
   * labelPagoSinSpan
+* mesSelectOneMenu
+* messages
+* [new](new.md)
+  * newDate
+  * newlowercase
+* noyes
+* [paginator](paginator.md)
+  * [paginatorReport](paginator/paginatorreport.md)
 
