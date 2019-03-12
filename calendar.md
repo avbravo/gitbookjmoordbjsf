@@ -28,8 +28,6 @@
     </composite:interface>
 ```
 
-
-
 ## Ejemplo:
 
 ```java
@@ -38,7 +36,6 @@
              label="#{msg['field.fechahorafinreserva']}" 
              listener="#{viajeController.handleSelect}"
              update=":form:vehiculo, :form:conductor, :form:msg"/>
-
 ```
 
 * Podemos usar un evento en ViajeController.java
