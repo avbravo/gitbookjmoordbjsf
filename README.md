@@ -1,4 +1,12 @@
 # jmoordbjsf
 
-This file file serves as your book's preface, a great place to describe your book's content and ideas.
+Es un api de componentes Java Server Faces, basados en Primefaces  y Bootfaces, que esta optimizado para ser usado con el stack jmoordb.
+
+
+
+Autor:
+
+Aristides Villarreal Bravo
+
+avbravo@gmail.com
 
