@@ -37,4 +37,5 @@
   * [paginatorReport](paginator/paginatorreport.md)
 * [password](password.md)
 * [print](print.md)
+* [save](save.md)
 
