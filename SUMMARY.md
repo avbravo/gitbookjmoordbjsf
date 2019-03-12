@@ -38,4 +38,5 @@
 * [password](password.md)
 * [print](print.md)
 * [save](save.md)
+* [search](search.md)
 
