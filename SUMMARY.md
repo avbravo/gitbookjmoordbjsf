@@ -7,14 +7,14 @@
 * [calendar](calendar.md)
 * column
 * columnview
-* commandbutton\_return
+* [commandbuttonedit](commandbuttonedit.md)
+* [commandbuttonreturn](commandbuttonreturn.md)
 * [template](template.md)
   * [csstemplate](template/csstemplate.md)
   * [jstemplate](template/jstemplate.md)
   * metatemplate
 * date
 * denegado
-* edit
 * email
 * [inputText](inputtext.md)
   * [inputTextMeses](inputtext/inputtextmeses.md)
