@@ -3,6 +3,7 @@
 * [Introduction](README.md)
 * [jmoordbjsf](chapter1.md)
 * [autocomplete](autocomplete.md)
+  * [autocompleteWithCalendarDateTime](autocomplete/autocompletewithcalendardatetime.md)
 * [calendar](calendar.md)
 * column
 * columnview
