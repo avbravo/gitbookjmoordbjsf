@@ -6,11 +6,17 @@
 
 \* Despliega el siguiente como Time  HH:mm:ss a
 
-Combinaciones: Date/Time Date/Time Date/Time
+* Combinaciones: Date/Time Date/Time Date/Time
 
 \* Se debe pasar columnpaneltip= 2 para que muestre el labely el valor
 
-Ejemplo:
+# Ejemplo:
+
+* Mostrar en el panel del autocomente sugerencia sobre fechas y horas formateadas con un &lt;p:calendar-
+
+
+
+![](/assets/autocalendar.png)
 
 ```java
         <p:outputLabel  value="#{msg['field.copiardesde']}" />
