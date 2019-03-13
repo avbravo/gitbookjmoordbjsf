@@ -2,9 +2,7 @@
 
 Es un api de componentes Java Server Faces, basados en Primefaces  y Bootfaces, que esta optimizado para ser usado con el stack jmoordb.
 
-
-
-Autor:
+**Autor:**
 
 Aristides Villarreal Bravo
 
