@@ -20,10 +20,6 @@ Colores disponibles:
 
 ![](/assets/colores.png)
 
-
-
-
-
 ## Segmento del &lt;p:schedule&gt;
 
 ```java
@@ -144,6 +140,19 @@ public void cargarSchedule(Boolean start) {
         }
     }
 // </editor-fold>
+```
+
+## EventSelect
+
+```java
+ public void onEventSelect(SelectEvent selectEvent) {
+        try {
+        } catch (Exception e) {
+            errorServices.errorDialog(nameOfClass(), nameOfMethod(), "cargarSchedule", e.getLocalizedMessage());
+        }
+
+        }
+        
 ```
 
 
