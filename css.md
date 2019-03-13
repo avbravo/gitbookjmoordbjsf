@@ -8,6 +8,22 @@ Para usarlo simplemente agregar antes del &lt;h:form&gt;
 <jmoordbjsf:cssschedule/>
 ```
 
+Colores disponibles:
+
+* schedule-orange
+* schedule-yellow
+* schedule-blue
+* schedule-gray
+* schedule-magenta
+* schedule-green
+* schedule-red
+
+![](/assets/colores.png)
+
+![](/assets/colores.png)
+
+![](/assets/colores.png)
+
 ![](/assets/colores.png)
 
 ## Segmento del &lt;p:schedule&gt;
@@ -23,8 +39,6 @@ Para usarlo simplemente agregar antes del &lt;h:form&gt;
            <!--<p:ajax  event="dateSelect" listener="#{calendarioSolicitudViajesController.onDateSelectCalendar}" update="newDetails" oncomplete="PF('newDialog').show();" />-->
  </p:schedule>
 ```
-
-
 
 ## CONTROLLER
 
