@@ -1,6 +1,6 @@
 # cssschedule
 
-Es un conjunto de css que se usan con los componentes &lt;p:schedule&gt; para darle colores diferentes.
+* Es un conjunto de css que se usan con los componentes &lt;p:schedule&gt; para darle colores diferentes.
 
 Para usarlo simplemente agregar antes del &lt;h:form&gt;
 
@@ -67,7 +67,7 @@ tema = "schedule-orange";
 ```java
 public void cargarSchedule(Boolean start) {
         try {
-          
+
             Document doc;
             Document docViajes = new Document("activo", "si");
 
@@ -85,12 +85,12 @@ public void cargarSchedule(Boolean start) {
                     String tema = "schedule-blue";
                     switch (a.getEstatus().getIdestatus()) {
                         case "SOLICITADO":
-                         
+
                             tema = "schedule-orange";
 
                             break;
                         case "APROBADO":
-                          
+
                             String viajest = "{";
                             viajest = a.getViaje().stream().map((t) -> t.getIdviaje() + " ").reduce(viajest, String::concat);
                             viajest = "}";
@@ -101,7 +101,7 @@ public void cargarSchedule(Boolean start) {
                            tema = "schedule-red";
                             break;
                         case "CANCELADO":
-                      
+
                             tema = "schedule-red";
                             break;
                     }
