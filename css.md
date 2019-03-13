@@ -20,11 +20,9 @@ Colores disponibles:
 
 ![](/assets/colores.png)
 
-![](/assets/colores.png)
 
-![](/assets/colores.png)
 
-![](/assets/colores.png)
+
 
 ## Segmento del &lt;p:schedule&gt;
 
