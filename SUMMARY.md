@@ -47,5 +47,6 @@
 * [sexo](sexo.md)
 * view
 * [yesno](yesno.md)
-* [cssschedule](css.md)
+* [schedule](schedule.md)
+  * [cssschedule](css.md)
 
