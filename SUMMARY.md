@@ -12,7 +12,7 @@
 * [template](template.md)
   * [csstemplate](template/csstemplate.md)
   * [jstemplate](template/jstemplate.md)
-  * metatemplate
+  * [metatemplate](template/metatemplate.md)
 * date
 * denegado
 * email
@@ -47,4 +47,5 @@
 * [sexo](sexo.md)
 * view
 * [yesno](yesno.md)
+* [cssschedule](css.md)
 
