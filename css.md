@@ -67,10 +67,7 @@ tema = "schedule-orange";
 ```java
 public void cargarSchedule(Boolean start) {
         try {
-            totalAprobado = 0;
-            totalSolicitado = 0;
-            totalRechazadoCancelado = 0;
-            totalViajes = 0;
+          
             Document doc;
             Document docViajes = new Document("activo", "si");
 
@@ -88,12 +85,12 @@ public void cargarSchedule(Boolean start) {
                     String tema = "schedule-blue";
                     switch (a.getEstatus().getIdestatus()) {
                         case "SOLICITADO":
-                            totalSolicitado++;
+                         
                             tema = "schedule-orange";
 
                             break;
                         case "APROBADO":
-                            totalAprobado++;
+                          
                             String viajest = "{";
                             viajest = a.getViaje().stream().map((t) -> t.getIdviaje() + " ").reduce(viajest, String::concat);
                             viajest = "}";
@@ -101,11 +98,10 @@ public void cargarSchedule(Boolean start) {
                             tema = "schedule-green";
                             break;
                         case "RECHAZADO":
-                            totalRechazadoCancelado++;
-                            tema = "schedule-red";
+                           tema = "schedule-red";
                             break;
                         case "CANCELADO":
-                            totalRechazadoCancelado++;
+                      
                             tema = "schedule-red";
                             break;
                     }
@@ -152,7 +148,6 @@ public void cargarSchedule(Boolean start) {
         }
 
         }
-        
 ```
 
 
