@@ -5,8 +5,8 @@
 * [autocomplete](autocomplete.md)
   * [autocompleteWithCalendarDateTime](autocomplete/autocompletewithcalendardatetime.md)
 * [calendar](calendar.md)
-* column
-* columnview
+* [column](column.md)
+* [columnview](columnview.md)
 * [commandbuttonedit](commandbuttonedit.md)
 * [commandbuttonreturn](commandbuttonreturn.md)
 * [template](template.md)
