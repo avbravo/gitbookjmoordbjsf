@@ -49,4 +49,5 @@
 * [yesno](yesno.md)
 * [schedule](schedule.md)
   * [cssschedule](css.md)
+  * [jsschedule](jsschedule.md)
 
