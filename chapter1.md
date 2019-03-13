@@ -1,8 +1,10 @@
-# Instalacion
+# Instalación
+
+* Recuerde que muchos componentes estan optimizados para trabajar con
+* jmoordb
+* jmoordbutils
 
 Solo agregue a su proyecto maven
-
-
 
 * Dependencia
 
@@ -22,8 +24,6 @@ Solo agregue a su proyecto maven
             <url>https://jitpack.io</url>
  </repository>
 ```
-
-
 
 en la pagina.xhtml
 
