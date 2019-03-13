@@ -2,6 +2,7 @@
 
 * Muestra un componente para el login de los usuarios
 * Permite que se agregue un selectOneMenu para los roles
+* simple=true indica que es un login simple sin roles
 
 ## Composite
 
@@ -28,10 +29,7 @@
 
         <composite:attribute name="dologin" 
                              method-signature="java.lang.String action()" />
-
 ```
-
-
 
 # 
 
