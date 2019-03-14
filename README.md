@@ -2,7 +2,7 @@
 
 Es un api de componentes \(composite\) Java Server Faces, basados en Primefaces  y Bootfaces, que esta optimizado para ser usado con el stack jmoordb.
 
-* Basado en
+* **Java Server Faces**
 
 [Mojarra Java Server Faces](https://javaserverfaces.github.io/)
 
@@ -12,7 +12,13 @@ Es un api de componentes \(composite\) Java Server Faces, basados en Primefaces 
 
 
 
-* Orientado a bases de datos NoSQL
+* **Orientado a bases de datos NoSQL**
+
+[MongoDB](https://www.mongodb.com/)
+
+[Couchdb](http://couchdb.apache.org/)
+
+
 
 **Autor:**
 
