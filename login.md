@@ -100,30 +100,31 @@
 # ![](/assets/dosele.png)
 
 ```java
- <jmoordbjsf:login 
-                    simple="false"
+  <jmoordbjsf:login                                         
                     id="username"
                     fieldusername="#{loginController.username}"
                     labelusername="#{app['login.username']}"
                     fieldpassword="#{loginController.password}"
                     dologin="#{loginController.doLogin()}"
-
+                    
+                    showone="true"
                     idone="rol"
                     requiredMessageone="#{msg['field.idrol']}"
                     selectItemsLabelone="#{item.idrol}"
                     selectItemsValueone="#{usuarioController.rolServices.rolList}"
                     valueone="#{loginController.rol}"
                     labelone="#{msg['field.rol']}"
-
+                    
+                    showtwo="true"
                     idtwo="almacen"
                     requiredMessagetwo="#{msg['field.almacen']}"
                     selectItemsLabeltwo="#{item.descripcion}"
                     selectItemsValuetwo="#{usuarioController.almacenServices.almacenList}"
                     valuetwo="#{loginController.almacen}"
                     labeltwo="#{msg['field.almacen']}"
-
-
+                    
                     />
+
 ```
 
 
