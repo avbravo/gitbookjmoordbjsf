@@ -61,7 +61,6 @@
 
 ```java
  <jmoordbjsf:login
-                    simple="true"
                     id="username"
                     fieldusername="#{loginController.username}"
                     labelusername="#{app['login.username']}"
@@ -80,13 +79,13 @@
 
 ```java
  <jmoordbjsf:login
-                    simple="false"
                     id="username"
                     fieldusername="#{loginController.username}"
                     labelusername="#{app['login.username']}"
                     fieldpassword="#{loginController.password}"
                     dologin="#{loginController.doLogin()}"
 
+                    showone="true"
                     idone="rol"
                     requiredMessageone="#{msg['field.idrol']}"
                     selectItemsLabelone="#{item.idrol}"
