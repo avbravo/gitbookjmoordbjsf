@@ -16,13 +16,11 @@ Es un api de componentes \(composite\) Java Server Faces, basados en Primefaces 
 
 [Couchdb](http://couchdb.apache.org/)
 
-
-
-
-
 **Autor:**
 
 Aristides Villarreal Bravo
 
 avbravo@gmail.com
+
+[http://avbravo.github.io](http://avbravo.github.io)
 
