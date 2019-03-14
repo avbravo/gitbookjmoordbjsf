@@ -15,24 +15,21 @@
         <composite:attribute name="fieldpassword" />
 ```
 
-## Atributos para un selectOneMenu con roles
+## Atributos para un selectOneMenu 
 
 ```java
-<composite:attribute name="valuerol" />
-<composite:attribute name="idrol" />
-<composite:attribute name="requiredMessagerol" default=""/>
-<composite:attribute name="requiredrol" default="true"/>
-<composite:attribute name="selectLabelrol" default=""/>
-<composite:attribute name="selectValuerol" default=""/>
-<composite:attribute name="selectDisablerol" default="true"/>
-
-<composite:attribute name="selectItemsValuerol" default="" />
-<composite:attribute name="selectItemsLabelrol" />
-<composite:attribute name="onchangerol" default ="" />
-<composite:attribute name="updaterol" default ="" />
-
-<composite:attribute name="dologin"
-method-signature="java.lang.String action()" />
+ <composite:attribute name="valueone" />
+        <composite:attribute name="labelone" />
+        <composite:attribute name="idone" />
+        <composite:attribute name="requiredMessageone" default=""/>
+        <composite:attribute name="requiredone" default="true"/>                 
+        <composite:attribute name="selectLabelone" default=""/>
+        <composite:attribute name="selectValueone" default=""/>
+        <composite:attribute name="selectDisableone" default="true"/>
+        <composite:attribute name="selectItemsValueone" default="" />
+        <composite:attribute name="selectItemsLabelone" />
+        <composite:attribute name="onchangeone" default ="" />
+        <composite:attribute name="updateone" default ="" />
 ```
 
 ## 
