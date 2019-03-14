@@ -14,7 +14,7 @@ Es un api de componentes \(composite\) Java Server Faces, basados en Primefaces 
 
 [MongoDB](https://www.mongodb.com/)
 
-[Couchdb](http://couchdb.apache.org/)
+[Couchbase](https://www.couchbase.com/)
 
 **Autor:**
 
