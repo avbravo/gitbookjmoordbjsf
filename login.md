@@ -53,7 +53,7 @@
         <composite:attribute name="updatetwo" default ="" />
 ```
 
-# Simple:
+* # Simple:
 
 ![](/assets/simplre.png)
 
@@ -70,7 +70,7 @@
                     />
 ```
 
-# Multiple:
+* # Con un selectOneMenu
 
 ![](/assets/login.png)
 
@@ -93,6 +93,14 @@
                     labelone="#{msg['field.rol']}"
                     />
 ```
+
+
+
+
+
+* # Con dos selectOneMenu
+
+# 
 
 
 
