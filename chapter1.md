@@ -29,13 +29,13 @@ en la pagina.xhtml
 
 * namespace
 
-```
+```java
  xmlns:jmoordbjsf="http://jmoordbjsf.com/taglib"
 ```
 
 puede utilizar el componte que desee
 
-```
+```java
 <jmoordbjsf:login
                     simple="true"
                     id="username"
