@@ -113,15 +113,14 @@
                     selectItemsValueone="#{usuarioController.rolServices.rolList}"
                     valueone="#{loginController.rol}"
                     labelone="#{msg['field.rol']}"
-                    
+
                     idtwo="almacen"
                     requiredMessagetwo="#{msg['field.almacen']}"
                     selectItemsLabeltwo="#{item.descripcion}"
                     selectItemsValuetwo="#{usuarioController.almacenServices.almacenList}"
                     valuetwo="#{loginController.almacen}"
                     labeltwo="#{msg['field.almacen']}"
-                    
-                    
+
 
                     />
 ```
