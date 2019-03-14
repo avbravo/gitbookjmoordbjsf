@@ -85,18 +85,14 @@
                     fieldpassword="#{loginController.password}"
                     dologin="#{loginController.doLogin()}"
 
-                    idone="one"
+                    idone="rol"
                     requiredMessageone="#{msg['field.idrol']}"
                     selectItemsLabelone="#{item.idrol}"
                     selectItemsValueone="#{usuarioController.rolServices.rolList}"
-                    valueone="#{loginContoneler.rol}"
+                    valueone="#{loginController.rol}"
                     labelone="#{msg['field.rol']}"
                     />
 ```
-
-
-
-
 
 * # Con dos selectOneMenu
 
