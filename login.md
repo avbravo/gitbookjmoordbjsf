@@ -15,7 +15,7 @@
         <composite:attribute name="fieldpassword" />
 ```
 
-## Atributos para un selectOneMenu 
+## Atributos para un selectOneMenu
 
 ```java
  <composite:attribute name="valueone" />
@@ -85,11 +85,12 @@
                     fieldpassword="#{loginController.password}"
                     dologin="#{loginController.doLogin()}"
 
-                    idrol="rol"
-                    requiredMessagerol="#{msg['field.idrol']}"                    
-                    selectItemsLabelrol="#{item.idrol}"
-                    selectItemsValuerol="#{usuarioController.rolServices.rolList}"
-                    valuerol="#{loginController.rol}"
+                    idone="one"
+                    requiredMessageone="#{msg['field.idrol']}"
+                    selectItemsLabelone="#{item.idrol}"
+                    selectItemsValueone="#{usuarioController.rolServices.rolList}"
+                    valueone="#{loginContoneler.rol}"
+                    labelone="#{msg['field.rol']}"
                     />
 ```
 
