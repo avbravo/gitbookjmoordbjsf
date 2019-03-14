@@ -79,8 +79,6 @@ listener="#{rolController.handleSelect}"
                            update=":form:dataTable"/>
 ```
 
-
-
 ## RolController.java
 
 ```java
@@ -90,7 +88,7 @@ listener="#{rolController.handleSelect}"
             rolList.add(rolSelected);
             rolFiltered = rolList;
            rolDataModel = new RolDataModel(rolList);
-            
+
             loginController.put("searchrol", "idrol");
             lookupServices.setIdrol(rolSelected.getIdrol());
         } catch (Exception e) {
@@ -113,13 +111,12 @@ listener="#{rolController.handleSelect}"
     }
 ```
 
-
-
-
-
 ## Ejemplo 2:
 
-* ## Usaremos para generar múltiples roles para el usuario.
+* ## Usaremos para generar múltiples roles para el usuario
+* Multiple
+
+* Dropdwon
 
 ## ![](/assets/suu.png)
 
@@ -139,8 +136,6 @@ listener="#{rolController.handleSelect}"
                        field="idrol"
                        />
 ```
-
-
 
 ## UsuarioController.java
 
