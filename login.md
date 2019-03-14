@@ -1,24 +1,25 @@
 # &lt;jmoordjsf:login/&gt;
 
 * Muestra un componente para el login de los usuarios
-* Permite que se agregue un selectOneMenu para los roles
-* simple=true indica que es un login simple sin roles
+* Permite que se agregue dos selectOneMenu 
+* simple=true indica que es un login con un 
 
 ## Atributos para un login simple
 
 ```java
-        <composite:attribute name="update" default=":form:growl"/>
-        <composite:attribute  name="simple" default="true"  type="java.lang.Boolean"/>
-
         <composite:attribute name="fieldusername" />
         <composite:attribute name="labelusername" />
         <composite:attribute name="fieldpassword" />
+        <composite:attribute name="update" default=":form:growl"/>
+         <composite:attribute name="dologin" 
+                             method-signature="java.lang.String action()" />
 ```
 
 ## Atributos para un selectOneMenu
 
 ```java
- <composite:attribute name="valueone" />
+  <composite:attribute  name="showone" default="false"  type="java.lang.Boolean"/>
+        <composite:attribute name="valueone" />
         <composite:attribute name="labelone" />
         <composite:attribute name="idone" />
         <composite:attribute name="requiredMessageone" default=""/>
@@ -39,7 +40,8 @@
 ## Atributos para un segundo selectOneMenu
 
 ```java
- <composite:attribute name="labeltwo" default=""/>
+ <composite:attribute  name="showtwo" default="false"  type="java.lang.Boolean"/>
+        <composite:attribute name="labeltwo" default=""/>
         <composite:attribute name="valuetwo" default="" />
         <composite:attribute name="idtwo" default="" />
         <composite:attribute name="requiredMessagetwo" default=""/>
