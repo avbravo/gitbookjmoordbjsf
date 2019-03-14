@@ -1,4 +1,4 @@
-# login
+# &lt;jmoordjsf:login/&gt;
 
 * Muestra un componente para el login de los usuarios
 * Permite que se agregue un selectOneMenu para los roles
@@ -13,8 +13,6 @@
         <composite:attribute name="fieldusername" />
         <composite:attribute name="labelusername" />
         <composite:attribute name="fieldpassword" />
-
-      
 ```
 
 ## Atributos para un selectOneMenu con roles
@@ -57,14 +55,6 @@ method-signature="java.lang.String action()" />
         <composite:attribute name="onchangetwo" default ="" />
         <composite:attribute name="updatetwo" default ="" />
 ```
-
-
-
-
-
-
-
-
 
 # Simple:
 
