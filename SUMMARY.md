@@ -62,6 +62,8 @@
   * [new.xhtml](formularios/newxhtml.md)
     * [Por llave primaria](formularios/newxhtml/newxthml-rol.md)
     * [Por otro atributo](formularios/newxhtml/por-otro-atributo.md)
+  * [view.xhtml](formularios/viewxhtml.md)
+    * [Formulario](formularios/viewxhtml/por-llave-primaria.md)
 * [Controller](controller.md)
   * [RolController.java](controller/rolcontrollerjava.md)
   * [FacultadController.java](controller/facultadcontrollerjava.md)

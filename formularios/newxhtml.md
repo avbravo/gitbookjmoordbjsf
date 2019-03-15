@@ -31,7 +31,9 @@
 
                 <jmoordbjsf:messages id="msg"/>
                 <jmoordbjsf:toolbarnew  />
-                <b:panel title="#{app['title.data']}" look="primary" rendered=" ">
+                <b:panel title="#{app['title.data']}" look="primary" rendered=" " onkeypress="if (event.keyCode == 13) {
+return false;
+}">
 
 
 
@@ -52,7 +54,6 @@
         <br/><br/><br/>
     </ui:define>
 </ui:composition>
-
 ```
 
 
