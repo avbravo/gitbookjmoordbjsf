@@ -10,15 +10,13 @@ Para estos casos:
 
 ![](/assets/form.png)
 
-
-
 * Remover los atributos del rendered  writable
 
 ![](/assets/panel.png)
 
 ## Codigo .xhtml
 
-```
+```java
 <?xml version='1.0' encoding='UTF-8' ?>
 <!DOCTYPE html>
 <ui:composition template="/layout/template.xhtml" 
@@ -48,7 +46,7 @@ Para estos casos:
 
                 <jmoordbjsf:messages id="msg"/>
 
-            
+
                 <b:panel title="#{msg['titleview.solicitudmanualdocente']}" look="primary" >
 
 
@@ -183,8 +181,8 @@ Para estos casos:
                             <!--                            <f:facet name="itemtip">
                                                             <h:panelGrid columns="1" cellpadding="5">
                                                                 <h:outputText value="#{msg['field.descripcion']} #{p.descripcion}" />
-                            
-                            
+
+
                                                             </h:panelGrid>
                                                         </f:facet>-->
 
@@ -218,8 +216,8 @@ Para estos casos:
                             <!--                            <f:facet name="itemtip">
                                                             <h:panelGrid columns="1" cellpadding="5">
                                                                 <h:outputText value="#{msg['field.descripcion']} #{p.descripcion}" />
-                            
-                            
+
+
                                                             </h:panelGrid>
                                                         </f:facet>-->
 
@@ -251,7 +249,6 @@ Para estos casos:
                         <b:inputTextarea rows="2" span="8" value="#{solicitudManualDocenteController.solicitud.objetivo}" id="objetivo"  label="#{msg['field.objetivo']}" />
 
 
-
                         <p:outputLabel  value="#{msg['field.lugares']}" />
                         <p:chips value="#{solicitudManualDocenteController.solicitud.lugares}" id="lugares"  title="#{msg['field.chips']}" />
 
@@ -276,7 +273,6 @@ Para estos casos:
 
                         <p:outputLabel  value="#{msg['field.fechahoraregreso']}" />
                         <jmoordbjsf:calendar pattern="dd/MM/yyyy HH:mm a" value="#{solicitudManualDocenteController.solicitud.fechahoraregreso}" id="fechahoraregreso" 
-
 
                                              label="#{msg['field.fechahoraregreso']}" />
 
@@ -312,14 +308,14 @@ Para estos casos:
 
                         <jmoordbjsf:toolbarnewsavereturn
                             renderednew ="#{applicationMenu.solicitudDocentePorAdministrador.create}"
-                           
+
                             new="#{solicitudManualDocenteController.prepare('new',solicitudManualDocenteController.solicitud)}"
                             rendererList="#{applicationMenu.solicitudDocentePorAdministrador.list}"
                             list="#{solicitudManualDocenteController.prepare('golist',solicitudManualDocenteController.solicitud)}"
                             renderedsave="#{applicationMenu.solicitudDocentePorAdministrador.create}"
                             save="#{solicitudManualDocenteController.save()}"
                             />
-                        
+
 
                     </b:panelGrid>
 
@@ -332,7 +328,6 @@ Para estos casos:
         <br/><br/><br/>
     </ui:define>
 </ui:composition>
-
 ```
 
 
