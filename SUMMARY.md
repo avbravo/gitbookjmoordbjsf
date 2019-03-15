@@ -60,5 +60,6 @@
   * [jsschedule](jsschedule.md)
 * [Formularios](formularios.md)
   * [new.xhtml](formularios/newxhtml.md)
-    * [Rol Por llave primaria](formularios/newxhtml/newxthml-rol.md)
+    * [Por llave primaria](formularios/newxhtml/newxthml-rol.md)
+    * [Por otro atributo](formularios/newxhtml/por-otro-atributo.md)
 

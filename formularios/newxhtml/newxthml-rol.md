@@ -1,8 +1,8 @@
-# Rol
+# Por llave primaria
+
+## Rol
 
 * Formulario simple con una llave primaria para usarse en el &lt;jmmordb:toolbarnew&gt;
-
-
 
 ```java
 <?xml version='1.0' encoding='UTF-8' ?>
@@ -69,7 +69,6 @@
         <br/><br/><br/>
     </ui:define>
 </ui:composition>
-
 ```
 
 
