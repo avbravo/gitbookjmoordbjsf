@@ -5,10 +5,6 @@
 
 ## Atributos para un login simple
 
-|  |  |
-| :--- | :--- |
-|  |  |
-
 ```java
         <composite:attribute name="fieldusername" />
         <composite:attribute name="labelusername" />
