@@ -5,35 +5,28 @@
 
 ## Atributos para un login simple
 
-```java
-        <composite:attribute name="fieldusername" />
-        <composite:attribute name="labelusername" />
-        <composite:attribute name="fieldpassword" />
-        <composite:attribute name="update" default=":form:growl"/>
-        <composite:attribute name="dologin"  method-signature="java.lang.String action()" />
-```
+|  |  |
+| :--- | :--- |
+| fieldusername |  |
+| labelusername |  |
+| fieldpassword |  |
+| update |  |
+| dologin | método para el login |
+| showone | false --&gt; no muestra el selectOneMenu |
+| valueone | valor a recibir  |
+| labelone | etiqueta  |
+| idone | nombre del id |
+| requiredMessageone | mensaje para requerido |
+| requiredone | true--&gt; es requerido |
+| selectLabelone |  |
+| selectValueone |  |
+| selectDisableone |  |
+| selectItemsValueone |  |
+| selectItemsLabelone |  |
+| onchangeone |  |
+| updateone |  |
 
-## Atributos para un selectOneMenu
 
-```java
-  <composite:attribute  name="showone" default="false"  type="java.lang.Boolean"/>
-        <composite:attribute name="valueone" />
-        <composite:attribute name="labelone" />
-        <composite:attribute name="idone" />
-        <composite:attribute name="requiredMessageone" default=""/>
-        <composite:attribute name="requiredone" default="true"/>                 
-        <composite:attribute name="selectLabelone" default=""/>
-        <composite:attribute name="selectValueone" default=""/>
-        <composite:attribute name="selectDisableone" default="true"/>
-        <composite:attribute name="selectItemsValueone" default="" />
-        <composite:attribute name="selectItemsLabelone" />
-        <composite:attribute name="onchangeone" default ="" />
-        <composite:attribute name="updateone" default ="" />
-```
-
-## 
-
-## 
 
 ## Atributos para un segundo selectOneMenu
 
