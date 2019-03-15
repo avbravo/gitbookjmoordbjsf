@@ -4,29 +4,25 @@
 
 ![](/assets/pc.png)
 
-## Composite
+## Atributos
 
-```java
-    <composite:interface >
+| Atributo | Descripción |
+| :--- | :--- |
+| id |  |
+| value  |  |
+| label |  |
+| mindate  |  |
+| mode default=popup |  |
+| required |  |
+| update  |  |
+| disabled default=false |  |
+| selectOtherMonths default=true |  |
+| showTodayButton default=true |  |
+| navigator default=true |  |
+| pattern default=dd/MM/yyyy  |  |
+| listener | method-signature=void handleSelect\(org.primefaces.event.SelectEvent\)  |
 
 
-        <composite:attribute name="id" />
-        <composite:attribute name="value" />
-        <composite:attribute name="label"/>
-        <composite:attribute name="mindate" default=""/>
-        <composite:attribute name="mode" default="popup"/>
-        <composite:attribute name="required"/>
-        <composite:attribute name="update" default=""/>
-        <composite:attribute name="disabled" default="false"/>
-
-        <composite:attribute name="selectOtherMonths" default="true"/>
-        <composite:attribute name="showTodayButton" default="true"/>
-        <composite:attribute name="navigator" default="true"/>
-        <composite:attribute name="pattern" default="dd/MM/yyyy" />
-        <composite:attribute name="listener"  
-                             method-signature="void handleSelect(org.primefaces.event.SelectEvent)" />
-    </composite:interface>
-```
 
 ## Ejemplo:
 
