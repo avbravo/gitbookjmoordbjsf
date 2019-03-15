@@ -1,8 +1,6 @@
 # Rol list.xhtml
 
-* Se usa el LookupServices para asociar los valores seleccionados y hacer las busquedas
-* Se invoca al metodo search\(\)
-
+* 
 ## Código
 
 ```java
@@ -104,7 +102,6 @@
         <jmoordbjsf:denegado renderedcondition="#{!loginController.loggedIn or !applicationMenu.rol.list}" />
     </ui:define>
 </ui:composition>
-
 ```
 
 
