@@ -27,7 +27,7 @@ Al ingresar un valor no existente y presionar Enter se habilita el panel con los
 
 ## RolController.java
 
-* isNew\(\), valida por la llave primaria.
+* **isNew\(\), valida por la llave primaria.**
 
 ```java
 public String isNew() {
