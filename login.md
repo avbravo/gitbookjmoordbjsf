@@ -2,7 +2,8 @@
 
 * Muestra un componente para el login de los usuarios
 * Permite que se agregue dos selectOneMenu 
-* simple=true indica que es un login con un 
+
+
 
 ## Atributos para un login simple
 
@@ -106,7 +107,7 @@
                     labelusername="#{app['login.username']}"
                     fieldpassword="#{loginController.password}"
                     dologin="#{loginController.doLogin()}"
-                    
+
                     showone="true"
                     idone="rol"
                     requiredMessageone="#{msg['field.idrol']}"
@@ -114,7 +115,7 @@
                     selectItemsValueone="#{usuarioController.rolServices.rolList}"
                     valueone="#{loginController.rol}"
                     labelone="#{msg['field.rol']}"
-                    
+
                     showtwo="true"
                     idtwo="almacen"
                     requiredMessagetwo="#{msg['field.almacen']}"
@@ -122,9 +123,8 @@
                     selectItemsValuetwo="#{usuarioController.almacenServices.almacenList}"
                     valuetwo="#{loginController.almacen}"
                     labeltwo="#{msg['field.almacen']}"
-                    
-                    />
 
+                    />
 ```
 
 
