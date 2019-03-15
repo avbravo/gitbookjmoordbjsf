@@ -5,12 +5,19 @@
 
 ![](/assets/form2.png)
 
-
-
 * El &lt;jmoordbjsf:toolbarnewsavereturn/&gt;, se coloca en la parte inferior.
 * El método isNew\(\) no valida si existe o no el elemento ya que no hay una busqueda sino al guardar
 * el metodo save\(\) debe implementarse la validaciòn para verificar si existe o no.
-* En el init\(\) en el switch para new se debe invocar el isNew\(\)
+* En el init\(\) en el switch para new se debe invocar el** isNew\(\)**
+
+```java
+case "gonew":
+solicitud = new Solicitud();
+
+writable = false;
+isNew();
+
+```
 
 ## Controller
 
@@ -47,7 +54,7 @@
                         isNew();
 
                         //
-                        
+
 
                         break;
                     case "view":
