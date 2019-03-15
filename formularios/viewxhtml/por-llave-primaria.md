@@ -1,5 +1,7 @@
 # Rol view.xhtml
 
+![](/assets/rolview.png)
+
 Formulario simple para el view.xhtml
 
 ```java

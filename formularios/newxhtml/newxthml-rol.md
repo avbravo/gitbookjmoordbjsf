@@ -4,6 +4,10 @@
 
 * Formulario simple con una llave primaria para usarse en el &lt;jmmordb:toolbarnew&gt;
 
+![](/assets/rolnew.png)
+
+
+
 ```java
 <?xml version='1.0' encoding='UTF-8' ?>
 <!DOCTYPE html>
