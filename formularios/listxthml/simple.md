@@ -1,7 +1,8 @@
 # Rol list.xhtml
 
-* 
-## Código
+![](/assets/rolistç.png)
+
+* ## Formulario simple para el view
 
 ```java
 <?xml version='1.0' encoding='UTF-8' ?>
