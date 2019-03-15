@@ -21,8 +21,6 @@
                         />
 ```
 
-
-
 Al ingresar un valor no existente y presionar Enter se habilita el panel con los demás datos.
 
 ![](/assets/test.png)
@@ -57,6 +55,51 @@ public String isNew() {
             errorServices.errorMessage(nameOfClass(),nameOfMethod(), e.getLocalizedMessage());
         }
         return "";
+    }
+```
+
+* **prepare\(\)**
+* Validar el new, y golist.
+
+```java
+public String prepare(String action, Rol item) {
+        String url = "";
+        try {
+            loginController.put("pagerol", page.toString());
+            loginController.put("rol", action);
+            switch (action) {
+                case "new":
+                    rol = new Rol();
+                    rolSelected = new Rol();
+
+                    writable = false;
+                    break;
+
+                case "view":
+
+                    rolSelected = item;
+                    rol = rolSelected;
+                    loginController.put("idrol", rol.getIdrol());
+
+                    url = "/pages/rol/view.xhtml";
+                    break;
+                case "golist":
+
+                    url = "/pages/rol/list.xhtml";
+                    break;
+
+                case "gonew":
+                    rol = new Rol();
+                    rolSelected = new Rol();
+                    url = "/pages/rol/new.xhtml";
+                    break;
+            }
+
+        } catch (Exception e) {
+            errorServices.errorMessage(nameOfClass(),nameOfMethod(), e.getLocalizedMessage());
+        }
+
+        return url;
     }
 ```
 
