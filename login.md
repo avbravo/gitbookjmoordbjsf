@@ -3,8 +3,6 @@
 * Muestra un componente para el login de los usuarios
 * Permite que se agregue dos selectOneMenu 
 
-
-
 ## Atributos para un login simple
 
 ```java
@@ -12,8 +10,8 @@
         <composite:attribute name="labelusername" />
         <composite:attribute name="fieldpassword" />
         <composite:attribute name="update" default=":form:growl"/>
-         <composite:attribute name="dologin" 
-                             method-signature="java.lang.String action()" />
+        <composite:attribute name="dologin" 
+                method-signature="java.lang.String action()" />
 ```
 
 ## Atributos para un selectOneMenu
