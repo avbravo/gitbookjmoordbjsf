@@ -55,8 +55,8 @@
 | fromstart  default= true |  |
 | required  default= false |  |
 | size   default= 25 |  |
-| listener    | method-signature= void handleSelect\(org.primefaces.event.SelectEvent\) |
-|  | completeMethod  |
+| listener | method-signature void handleSelect\(org.primefaces.event.SelectEvent\) |
+| completeMethod | method-signature=java.util.List complete\(java.lang.String\) |
 
 # 
 
