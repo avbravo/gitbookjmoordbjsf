@@ -12,7 +12,7 @@ Solo agregue a su proyecto maven
           <dependency>
             <groupId>com.github.avbravo</groupId>
             <artifactId>jmoordbjsf</artifactId>
-            <version>0.3</version>
+            <version>0.3.2</version>
         </dependency>
 ```
 

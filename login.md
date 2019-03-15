@@ -5,13 +5,13 @@
 
 ## Atributos para un login simple
 
-| Atributo | Descripción  |
+| Atributo | Descripción |
 | :--- | :--- |
 | fieldusername |  |
 | labelusername |  |
 | fieldpassword |  |
 | update |  |
-| dologin | método para el login |
+| dologin  **method-signature="java.lang.String action\(\)** | método para el login |
 | **showone** | **false --&gt; no muestra el selectOneMenu** |
 | valueone | entity que guarda el entity seleccionado |
 | labelone | etiqueta que se mostrara a la izquierda del selectOneMenu |
