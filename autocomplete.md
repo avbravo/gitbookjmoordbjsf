@@ -1,4 +1,4 @@
-# autocomplete
+# &lt;jmoordbjsf:autocomplete/&gt;
 
 Genera autocomplete basados en &lt;p:autocomplete&gt; optimizados para jmoordb
 
@@ -21,15 +21,15 @@ listener="#{rolController.handleAutocompleteOfListXhtml}"
 listener="#{rolController.handleSelect}"
 ```
 
-## Interface composite
+## Atributos
 
 | Atributo | Descripción |
 | :--- | :--- |
-| value  |  |
+| value |  |
 | disabled default= false |  |
 | multiple default= false |  |
 | dropdown  default= false |  |
-| minQueryLength   default= 1  |  |
+| minQueryLength   default= 1 |  |
 | itemLabel |  |
 | update |  |
 | rendered |  |
@@ -45,8 +45,8 @@ listener="#{rolController.handleSelect}"
 | fromstart default= true |  |
 | required  default= false |  |
 | size   default= 25 |  |
-| listener      method-signature= void handleSelect\(org.primefaces.event.SelectEvent\)  |  |
-| completeMethod method-signature= java.util.List complete\(java.lang.String\)  |  |
+| listener      method-signature= void handleSelect\(org.primefaces.event.SelectEvent\) |  |
+| completeMethod method-signature= java.util.List complete\(java.lang.String\) |  |
 
 ## Ejemplos
 

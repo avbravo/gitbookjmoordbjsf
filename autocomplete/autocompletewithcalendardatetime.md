@@ -10,68 +10,9 @@
 
 \* Se debe pasar columnpaneltip= 2 para que muestre el labely el valor
 
+# Atributos
 
 
-# Interfaz composite
-
-```java
-        <composite:attribute name="value" />
-        <composite:attribute name="disabled" default="false" />
-        <composite:attribute name="multiple" default="false" />
-        <composite:attribute name="dropdown"  default="false"/>
-        <composite:attribute name="minQueryLength"  default="1"/>
-        <composite:attribute name="itemLabel" />
-        <composite:attribute name="update" />
-
-        <composite:attribute name="rendered"/>
-        <composite:attribute name="field"/>
-        <composite:attribute name="converter"/>
-        <composite:attribute name="columnpaneltip" default="1"/>
-        <composite:attribute name="labeltip1" />
-        <composite:attribute name="labeltip2" default=""/>
-        <composite:attribute name="labeltip3" default=""/>
-        <composite:attribute name="labeltip4" default=""/>
-        <composite:attribute name="labeltip5" default=""/>
-        <composite:attribute name="labeltip6" default=""/>
-        <composite:attribute name="labelvalue1" default=""/>
-        <composite:attribute name="labelvalue2" default=""/>
-        <composite:attribute name="labelvalue3" default=""/>
-        <composite:attribute name="labelvalue4" default=""/>
-        <composite:attribute name="labelvalue5" default=""/>
-        <composite:attribute name="labelvalue6" default=""/>
-
-
-        <composite:attribute name="calendardatelabel1" default=""/>
-        <composite:attribute name="calendardatelabel2" default=""/>
-        <composite:attribute name="calendardatelabel3" default=""/>
-        <composite:attribute name="calendartimelabel1" default=""/>
-        <composite:attribute name="calendartimelabel2" default=""/>
-        <composite:attribute name="calendartimelabel3" default=""/>
-
-        <composite:attribute name="calendardatevalue1" default=""/>
-        <composite:attribute name="calendardatevalue2" default=""/>
-        <composite:attribute name="calendardatevalue3" default=""/>
-        <composite:attribute name="calendartimevalue1" default=""/>
-        <composite:attribute name="calendartimevalue2" default=""/>
-        <composite:attribute name="calendartimevalue3" default=""/>
-
-
-
-        <composite:attribute name="calendarpatternDate" default="dd/MM/yyyy"/>
-        <composite:attribute name="calendarpatternTime" default="HH:mm:ss a"/>
-        <composite:attribute name="calendarsize" default="8"/>
-
-
-        <composite:attribute name="fromstart" default="true"/>
-        <composite:attribute name="required" default="false" />
-        <composite:attribute name="size"  default="25"/>
-        <composite:attribute name="listener"  
-                             method-signature="void handleSelect(org.primefaces.event.SelectEvent)" />
-        <composite:attribute name="completeMethod"  
-                             method-signature="java.util.List complete(java.lang.String)" />
-
-    </composite:interface>
-```
 
 # Ejemplo:
 
