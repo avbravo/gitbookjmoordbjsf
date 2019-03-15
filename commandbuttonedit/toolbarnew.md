@@ -7,7 +7,7 @@
 
 ![](/assets/componente.png)
 
-## Ejemplo con llave primaria  @Id
+* ## Ejemplo con llave primaria  @Id
 
 ```java
  <jmoordbjsf:toolbarnew label="#{msg['field.idrol']}"
@@ -100,6 +100,60 @@ public String prepare(String action, Rol item) {
         }
 
         return url;
+    }
+```
+
+
+
+
+
+## Ejemplo 2: Por cualquier atributo
+
+* En este ejemplo buscamos por cualquier otro atributo que no sea la llave primaria
+
+```java
+<jmoordbjsf:toolbarnew label="#{msg['field.descripcion']}"
+                       title="#{msg['titleview.facultad']}"
+                       value="#{facultadController.facultad.descripcion}"
+                       isnew="#{facultadController.isNew()}"
+                       disabled="#{facultadController.writable}"
+                       new="#{facultadController.prepare('new',facultadController.facultad)}"
+                       rendererList="#{applicationMenu.facultad.list}"
+                       list="#{facultadController.prepare('golist',facultadController.facultad)}"
+
+                       />
+```
+
+* **Modificar el método isNew\(\)**
+* Buscar en un List&lt;&gt;
+
+```java
+@Override
+    public String isNew() {
+        try {
+            writable = true;
+            if (JsfUtil.isVacio(facultad.getDescripcion())) {
+                writable = false;
+                return "";
+            }
+            facultad.setDescripcion(facultad.getDescripcion().toUpperCase());
+            List<Facultad> list = facultadRepository.findBy("descripcion", facultad.getDescripcion());
+            if (!list.isEmpty()) {
+                writable = false;
+
+                JsfUtil.warningMessage(rf.getAppMessage("warning.idexist"));
+                return "";
+            } else {
+                String idsecond = facultad.getDescripcion();
+                facultad = new Facultad();
+                facultad.setDescripcion(idsecond);
+                facultadSelected = new Facultad();
+            }
+
+        } catch (Exception e) {
+            errorServices.errorMessage(nameOfClass(),nameOfMethod(), e.getLocalizedMessage());
+        }
+        return "";
     }
 ```
 
