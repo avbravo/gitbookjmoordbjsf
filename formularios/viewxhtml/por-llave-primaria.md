@@ -1,4 +1,4 @@
-view,xhtml simple
+# view,xhtml simple
 
 Rol
 
@@ -23,7 +23,7 @@ Rol
                 border-color: #428BCA;
             }
         </style>
-      
+
          <b:form id="form"  prependId="false"  rendered="#{loginController.loggedIn and applicationMenu.rol.query}" onkeypress="if (event.keyCode == 13) {
                     return false;
                 }">
@@ -35,17 +35,17 @@ Rol
 
                         <p:outputLabel  value="#{msg['field.idrol']}" />
                         <p:outputLabel value="#{rolController.rol.idrol}" id="idrol"  />
-                       
+
                          <p:outputLabel  value="#{msg['field.rol']}" />
                         <jmoordbjsf:inputText value="#{rolController.rol.rol}" id="rol"  />
 
-              
-                    
+
+
                         <p:outputLabel  value="#{msg['field.activo']}" />
                         <jmoordbjsf:yesno value="#{rolController.rol.activo}" id="activo"  required="true"/>
 
 
-                       
+
 
                     </b:panelGrid>
                     <jmoordbjsf:toolbarview 
@@ -64,7 +64,6 @@ Rol
         <br/><br/><br/>
     </ui:define>
 </ui:composition>
-
 ```
 
 
