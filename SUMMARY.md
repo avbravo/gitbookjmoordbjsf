@@ -58,4 +58,7 @@
 * [schedule](schedule.md)
   * [cssschedule](css.md)
   * [jsschedule](jsschedule.md)
+* [Formularios](formularios.md)
+  * [new.xhtml](formularios/newxhtml.md)
+    * [Rol Por llave primaria](formularios/newxhtml/newxthml-rol.md)
 
