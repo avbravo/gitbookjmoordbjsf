@@ -5,7 +5,7 @@
 
 ## Atributos para un login simple
 
-|  |  |
+| Atributo | Descripción  |
 | :--- | :--- |
 | fieldusername |  |
 | labelusername |  |
@@ -27,21 +27,19 @@
 | updateone |  |
 | **showtwo** | **false --&gt; no muestra el segundo selectOneMenu** |
 | labeltwo |  |
-| valuetwo  |  |
-| idtwo  |  |
+| valuetwo |  |
+| idtwo |  |
 | requiredMessagetwo |  |
 | requiredtwo |  |
 | selectLabeltwo |  |
 | selectValuetwo |  |
-| selectDisabletwo  |  |
+| selectDisabletwo |  |
 | selectItemsValuetwo |  |
 | selectItemsLabeltwo |  |
 | onchangetwo |  |
 | updatetwo |  |
 
 ## 
-
-
 
 * # Simple:
 
