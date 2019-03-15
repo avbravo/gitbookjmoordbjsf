@@ -65,6 +65,8 @@
     * [Sin campo de validacion](formularios/newxhtml/newxhtml-sin-campo-de-validacion.md)
   * [view.xhtml](formularios/viewxhtml.md)
     * [Formulario](formularios/viewxhtml/por-llave-primaria.md)
+  * [list.xthml](formularios/listxthml.md)
+    * [Rol list.xhtml](formularios/listxthml/simple.md)
 * [Controller](controller.md)
   * [RolController.java](controller/rolcontrollerjava.md)
   * [FacultadController.java](controller/facultadcontrollerjava.md)
