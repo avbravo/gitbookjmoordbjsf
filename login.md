@@ -12,39 +12,36 @@
 | fieldpassword |  |
 | update |  |
 | dologin | método para el login |
-| showone | false --&gt; no muestra el selectOneMenu |
-| valueone | valor a recibir  |
-| labelone | etiqueta  |
+| **showone** | **false --&gt; no muestra el selectOneMenu** |
+| valueone | entity que guarda el entity seleccionado |
+| labelone | etiqueta que se mostrara a la izquierda del selectOneMenu |
 | idone | nombre del id |
 | requiredMessageone | mensaje para requerido |
 | requiredone | true--&gt; es requerido |
 | selectLabelone |  |
 | selectValueone |  |
 | selectDisableone |  |
-| selectItemsValueone |  |
-| selectItemsLabelone |  |
+| selectItemsValueone | List&lt;&gt; del entity con los valores que se mostraran |
+| selectItemsLabelone | Texto que se mostrara del entity seleccionado |
 | onchangeone |  |
 | updateone |  |
+| **showtwo** | **false --&gt; no muestra el segundo selectOneMenu** |
+| labeltwo |  |
+| valuetwo  |  |
+| idtwo  |  |
+| requiredMessagetwo |  |
+| requiredtwo |  |
+| selectLabeltwo |  |
+| selectValuetwo |  |
+| selectDisabletwo  |  |
+| selectItemsValuetwo |  |
+| selectItemsLabeltwo |  |
+| onchangetwo |  |
+| updatetwo |  |
+
+## 
 
 
-
-## Atributos para un segundo selectOneMenu
-
-```java
- <composite:attribute  name="showtwo" default="false"  type="java.lang.Boolean"/>
-        <composite:attribute name="labeltwo" default=""/>
-        <composite:attribute name="valuetwo" default="" />
-        <composite:attribute name="idtwo" default="" />
-        <composite:attribute name="requiredMessagetwo" default=""/>
-        <composite:attribute name="requiredtwo" default="true"/>                 
-        <composite:attribute name="selectLabeltwo" default=""/>
-        <composite:attribute name="selectValuetwo" default=""/>
-        <composite:attribute name="selectDisabletwo" default="true"/>
-        <composite:attribute name="selectItemsValuetwo" default="" />
-        <composite:attribute name="selectItemsLabeltwo" />
-        <composite:attribute name="onchangetwo" default ="" />
-        <composite:attribute name="updatetwo" default ="" />
-```
 
 * # Simple:
 
