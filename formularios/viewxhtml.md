@@ -3,8 +3,6 @@
 * Se usa para la edición de los datos, se llama desde un list.xtml
 * No influye que se use un atributo por llave primaria o no, ya que se invoca desde un list.xhtml
 
-
-
 # Esquema
 
 ```java
@@ -28,7 +26,7 @@
                 border-color: #428BCA;
             }
         </style>
-      
+
          <b:form id="form"  prependId="false"  rendered="" onkeypress="if (event.keyCode == 13) {
                     return false;
                 }">
@@ -36,40 +34,22 @@
 
                 <jmoordbjsf:messages id="msg"/>
                 <b:panel title="#{msg['titleview.rol']}"  look="primary">
-                    <b:panelGrid id="panel" colSpans="2,10" size="xs" rendered="#{rolController.writable}"> 
+                    <b:panelGrid id="panel" colSpans="2,10" size="xs" rendered=""> 
 
-                        <p:outputLabel  value="#{msg['field.idrol']}" />
-                        <p:outputLabel value="#{rolController.rol.idrol}" id="idrol"  />
-                       
-                         <p:outputLabel  value="#{msg['field.rol']}" />
-                        <jmoordbjsf:inputText value="#{rolController.rol.rol}" id="rol"  />
+                       //AGREGUE LOS COMPONENTES AQUI
 
-              
-                    
-                        <p:outputLabel  value="#{msg['field.activo']}" />
-                        <jmoordbjsf:yesno value="#{rolController.rol.activo}" id="activo"  required="true"/>
-
-
-                       
 
                     </b:panelGrid>
                     <jmoordbjsf:toolbarview 
-                        renderedDelete="#{applicationMenu.rol.delete and rolController.writable }"
-                        renderedEdit="#{applicationMenu.rol.edit and rolController.writable}" 
-                        renderedList="#{applicationMenu.rol.list and rolController.writable}"                    
-                        edit="#{rolController.edit()}"
-                        delete="#{rolController.delete(rolController.rol,true)}"
-                        print="#{rolController.print()}"
-                        url="#{rolController.prepare('golist',rolController.rol)}"
+                       
                         />
                 </b:panel>
             </h:panelGroup>
         </b:form>
- <jmoordbjsf:denegado renderedcondition="#{!loginController.loggedIn or !applicationMenu.rol.query}" />
+ <jmoordbjsf:denegado renderedcondition="" />
         <br/><br/><br/>
     </ui:define>
 </ui:composition>
-
 ```
 
 
