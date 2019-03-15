@@ -1,6 +1,6 @@
-# view,xhtml simple
+# Rol view.xhtml
 
-Rol
+Formulario simple para el view.xhtml
 
 ```java
 <?xml version='1.0' encoding='UTF-8' ?>

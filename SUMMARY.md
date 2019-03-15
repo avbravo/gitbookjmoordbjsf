@@ -64,7 +64,7 @@
     * [Por otro atributo](formularios/newxhtml/por-otro-atributo.md)
     * [Sin campo de validacion](formularios/newxhtml/newxhtml-sin-campo-de-validacion.md)
   * [view.xhtml](formularios/viewxhtml.md)
-    * [Formulario](formularios/viewxhtml/por-llave-primaria.md)
+    * [Rol view.xhtml](formularios/viewxhtml/por-llave-primaria.md)
   * [list.xthml](formularios/listxthml.md)
     * [Rol list.xhtml](formularios/listxthml/simple.md)
 * [Controller](controller.md)
