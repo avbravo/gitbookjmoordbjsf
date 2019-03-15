@@ -21,19 +21,32 @@ listener="#{rolController.handleAutocompleteOfListXhtml}"
 listener="#{rolController.handleSelect}"
 ```
 
-
-
 ## Interface composite
-
-
 
 | Atributo | Descripción |
 | :--- | :--- |
-|  |  |
-
-
-
-
+| value  |  |
+| disabled default= false |  |
+| multiple default= false |  |
+| dropdown  default= false |  |
+| minQueryLength   default= 1  |  |
+| itemLabel |  |
+| update |  |
+| rendered |  |
+| field |  |
+| converter |  |
+| columnpaneltip  default= 1 |  |
+| labeltip1 |  |
+| labeltip2 |  |
+| labeltip3 |  |
+| labeltip4 |  |
+| labeltip5 |  |
+| labeltip6 |  |
+| fromstart default= true |  |
+| required  default= false |  |
+| size   default= 25 |  |
+| listener      method-signature= void handleSelect\(org.primefaces.event.SelectEvent\)  |  |
+| completeMethod method-signature= java.util.List complete\(java.lang.String\)  |  |
 
 ## Ejemplos
 
