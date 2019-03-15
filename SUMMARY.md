@@ -13,28 +13,28 @@
   * [csstemplate](template/csstemplate.md)
   * [jstemplate](template/jstemplate.md)
   * [metatemplate](template/metatemplate.md)
-* date
-* denegado
-* email
+* [date](date.md)
+* [denegado](denegado.md)
+* [email](email.md)
 * [inputText](inputtext.md)
   * [inputTextMeses](inputtext/inputtextmeses.md)
-  * inputTextPago
-  * inputTextPagoAutomatico
-  * inputTextPagoAutomaticoSinSpan
-  * inputTextPagoDialog
-  * inputTextPagoPagare
+  * [inputTextPago](inputtext/inputtextpago.md)
+  * [inputTextPagoAutomatico](inputtext/inputtextpagoautomatico.md)
+  * [inputTextPagoAutomaticoSinSpan](inputtext/inputtextpagoautomaticosinspan.md)
+  * [inputTextPagoDialog](inputtext/inputtextpagodialog.md)
+  * [inputTextPagoPagare](inputtext/inputtextpagopagare.md)
 * [label](label.md)
-  * labelDate
+  * [labelDate](label/labeldate.md)
   * labelNumber
   * labelPago
   * labelPagoSinSpan
 * [login](login.md)
 * [mesSelectOneMenu](messelectonemenu.md)
-* messages
+* [messages](messages.md)
 * [new](new.md)
-  * newDate
-  * newlowercase
-* noyes
+  * [newDate](new/newdate.md)
+  * [newlowercase](new/newlowercase.md)
+* [noyes](noyes.md)
 * [paginator](paginator.md)
   * [paginatorReport](paginator/paginatorreport.md)
 * [password](password.md)
@@ -46,7 +46,7 @@
   * [searchYesNo](search/searchyesno.md)
 * [selectOneMenu](selectonemenu.md)
 * [sexo](sexo.md)
-* view
+* [view](view.md)
 * [yesno](yesno.md)
 * [schedule](schedule.md)
   * [cssschedule](css.md)
