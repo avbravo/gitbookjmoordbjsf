@@ -10,12 +10,15 @@
 * [commandbuttonedit](commandbuttonedit.md)
   * [commandbuttonedit](commandbuttonedit/commandbuttonedit.md)
   * [commandbuttonreturn](commandbuttonedit/commandbuttonreturn.md)
-  * [commandbuttonnewsavereturn](commandbuttonedit/commandbuttonnewsavereturn.md)
 * [template](template.md)
   * [csstemplate](template/csstemplate.md)
   * [jstemplate](template/jstemplate.md)
   * [metatemplate](template/metatemplate.md)
 * [date](date.md)
+* [toolbar](toolbar.md)
+  * toolbarnew
+  * [toolbarnewsavereturn](commandbuttonedit/commandbuttonnewsavereturn.md)
+  * toolbarview
 * [denegado](denegado.md)
 * [email](email.md)
 * [inputText](inputtext.md)
