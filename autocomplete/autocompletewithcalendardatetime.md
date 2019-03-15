@@ -12,7 +12,55 @@
 
 # Atributos
 
+| Atributo | Descripción |
+| :--- | :--- |
+| value  |  |
+| disabled  default= false  |  |
+| multiple  default= false |  |
+| dropdown   default= false  |  |
+| minQueryLength   default= 1  |  |
+| itemLabel |  |
+| update |  |
+| rendered |  |
+|  field  |  |
+| converter |  |
+| columnpaneltip  default= 1 |  |
+| labeltip1 |  |
+| labeltip2 |  |
+| labeltip3 |  |
+| labeltip4 |  |
+| labeltip5 |  |
+| labeltip6 |  |
+| labelvalue1 |  |
+| labelvalue2 |  |
+| labelvalue3 |  |
+| labelvalue4 |  |
+| labelvalue5 |  |
+| labelvalue6 |  |
+| calendardatelabel1  |  |
+| calendardatelabel2 |  |
+| calendardatelabel3 |  |
+| calendartimelabel1 |  |
+| calendartimelabel2 |  |
+| calendartimelabel3 |  |
+|  calendardatevalue1 |  |
+| calendardatevalue2 |  |
+| calendardatevalue3 |  |
+| calendartimevalue1 |  |
+| calendartimevalue2 |  |
+| calendartimevalue3 |  |
+| calendarpatternDate  default= dd/MM/yyyy |  |
+| calendarpatternTime  default= HH:mm:ss a  |  |
+| calendarsize  default= 8 |  |
+| fromstart  default= true |  |
+| required  default= false |  |
+| size   default= 25 |  |
+| listener   method-signature= void handleSelect\(org.primefaces.event.SelectEvent\)  |  |
+| completeMethod  method-signature= java.util.List complete\(java.lang.String\)  |  |
 
+# 
+
+# 
 
 # Ejemplo:
 
