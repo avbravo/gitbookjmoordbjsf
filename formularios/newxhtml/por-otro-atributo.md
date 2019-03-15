@@ -1,6 +1,6 @@
 # Por otro atributo
 
-Formulario para Facultad
+## Formulario para Facultad
 
 ```java
 <?xml version='1.0' encoding='UTF-8' ?>
@@ -23,7 +23,7 @@ Formulario para Facultad
                 border-color: #428BCA;
             }
         </style>
-     
+
         <b:form id="form"  prependId="false"  rendered="#{loginController.loggedIn and applicationMenu.facultad.create}" onkeypress="if (event.keyCode == 13) {
                     return false;
                 }">
@@ -66,7 +66,6 @@ Formulario para Facultad
         <br/><br/><br/>
     </ui:define>
 </ui:composition>
-
 ```
 
 
