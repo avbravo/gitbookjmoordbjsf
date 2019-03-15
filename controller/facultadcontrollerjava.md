@@ -1,5 +1,7 @@
 # FacultadController.java
 
+* Muestra un formulario donde se busca por atributo que no es la llave primaria.
+
 **Nota: **
 
 * Tenga presente que los set/get se omitieron para no hacer muy largo el código en el libro.
@@ -113,7 +115,7 @@ ErrorInfoTransporteejbServices errorServices;
         return facultadRepository.listOfPage(rowPage);
     }
 
-
+//AGREGUE AQUI LOS SET/GET
 
     // </editor-fold>
 // <editor-fold defaultstate="collapsed" desc="constructor">
