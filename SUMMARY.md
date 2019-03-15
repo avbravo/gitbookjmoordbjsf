@@ -16,9 +16,11 @@
   * [metatemplate](template/metatemplate.md)
 * [date](date.md)
 * [toolbar](toolbar.md)
-  * toolbarnew
+  * [toolbarnew](commandbuttonedit/toolbarnew.md)
   * [toolbarnewsavereturn](commandbuttonedit/commandbuttonnewsavereturn.md)
-  * toolbarview
+  * [toolbarview](commandbuttonedit/toolbarview.md)
+  * [toolbarnewdate](commandbuttonedit/toolbarnewdate.md)
+  * [toolbarnewlowercase](commandbuttonedit/toolbarnewlowercase.md)
 * [denegado](denegado.md)
 * [email](email.md)
 * [inputText](inputtext.md)
