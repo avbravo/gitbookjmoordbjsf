@@ -7,7 +7,8 @@ Definimos los atributos
 * controller
 * bean 
 * clear que es el método que deseamos invocar 
-* Si el método necesita leer atributos lo podemos pasar  mediante &lt;f:attribute&gt;
+* Si el método necesita leer atributos lo podemos pasar  mediante &lt;**f:attribute&gt;**
+* en esos métodos los obtenemos
 
 ```java
  <composite:attribute name="controller" type="java.lang.Object"/> 
@@ -34,7 +35,7 @@ action="#{cc.attrs.controller[cc.attrs.next]}"
                                oncomplete="remoteshowall();"
                                action="#{cc.attrs.controller[cc.attrs.next]}" 
                                look="primary"
-                              
+
                                update=":form:dataTable " >
                                <f:attribute name="page" value="#{cc.attrs.page}"/>
                               <f:attribute name="sizeOfPage" value="#{cc.attrs.sizeOfPage}"/>
