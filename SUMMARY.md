@@ -67,4 +67,6 @@
 * [Controller](controller.md)
   * [RolController.java](controller/rolcontrollerjava.md)
   * [FacultadController.java](controller/facultadcontrollerjava.md)
+* [Development](development.md)
+  * [Clases como parametros y metodos en el composite](development/clases-como-parametros-y-metodos-en-el-composite.md)
 
