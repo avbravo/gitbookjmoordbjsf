@@ -34,9 +34,12 @@ action="#{cc.attrs.controller[cc.attrs.next]}"
                                oncomplete="remoteshowall();"
                                action="#{cc.attrs.controller[cc.attrs.next]}" 
                                look="primary"
-                              <f:attribute name="page" value="#{cc.attrs.page}"/>
+                              
+                               update=":form:dataTable " >
+                               <f:attribute name="page" value="#{cc.attrs.page}"/>
                               <f:attribute name="sizeOfPage" value="#{cc.attrs.sizeOfPage}"/>
-                               update=":form:dataTable " />
+
+                               </b:commandButton>
 ```
 
 ## 
@@ -52,12 +55,6 @@ Se puede observar que no se necesita pasar como parámetro el método next del C
                     />
 ```
 
-
-
-
-
-
-
 ## Controller o en la Interfaz
 
 * Esta definido el método next\(\)
@@ -67,7 +64,7 @@ Se puede observar que no se necesita pasar como parámetro el método next del C
         try {
             Integer page= (Integer) UIComponent.getCurrentComponent(FacesContext.getCurrentInstance()).getAttributes().get("page");
             Integer sizeOfPage = (Integer) UIComponent.getCurrentComponent(FacesContext.getCurrentInstance()).getAttributes().get("sizeOfPage");
-       
+
             if (page < sizeOfPage) {
                 page++;
             }
@@ -78,7 +75,6 @@ Se puede observar que no se necesita pasar como parámetro el método next del C
         }
         return "";
     }
-
 ```
 
 
