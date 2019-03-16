@@ -80,8 +80,6 @@ Se puede observar que no se necesita pasar como parámetro el método next del C
     }
 ```
 
-
-
 ## Componente paginator
 
 ```java
@@ -101,9 +99,9 @@ Se puede observar que no se necesita pasar como parámetro el método next del C
           <composite:attribute name="sizeOfPage" default="25" />
         <composite:attribute name="page" />
         <composite:attribute name="rowPage" default="25" />
-        
+
         <composite:attribute name="pages" type="java.util.List" />
-        
+
         <composite:attribute name="skip" />
         <composite:attribute name="renderednew" default="true"/>
         <composite:attribute name="renderedClear" default="true"/>
@@ -140,7 +138,7 @@ Se puede observar que no se necesita pasar como parámetro el método next del C
                                oncomplete="remoteshowall();"
                                action="#{cc.attrs.controller[cc.attrs.first]}"
                                update=":form:dataTable " > 
-               
+
             </b:commandButton>
 
 
@@ -172,7 +170,7 @@ Se puede observar que no se necesita pasar como parámetro el método next del C
             </b:commandButton>
 
            <b:selectOneMenu id="pages"
-                             
+
                              value="#{cc.attrs.page}"                                                  
                              colMd="1"
                              onchange="#{cc.attrs.skip}"
@@ -221,7 +219,7 @@ Se puede observar que no se necesita pasar como parámetro el método next del C
                               oncomplete="remoteshowall();"
                              update=":form:dataTable" 
                 >
-                
+
                 <f:selectItem itemLabel="#{app['rows.l25']}" itemValue="25" />
                 <f:selectItem itemLabel="#{app['rows.l15']}" itemValue="15" />
                 <f:selectItem itemLabel="#{app['rows.l10']}" itemValue="10" />
@@ -233,12 +231,7 @@ Se puede observar que no se necesita pasar como parámetro el método next del C
     </composite:implementation>
 
 </html>
-
 ```
-
-
-
-
 
 ## Llamado desde el xhtml
 
@@ -253,8 +246,6 @@ Se puede observar que no se necesita pasar como parámetro el método next del C
                     new="#{rolController.prepare('gonew',rolController.rol)}"
                     />
 ```
-
-
 
 La implementacion anterior usaba todos estos parámetros.
 
@@ -277,18 +268,16 @@ La implementacion anterior usaba todos estos parámetros.
                     />
 ```
 
-
-
 ## CONTROLLER
 
 * Se elminaron los metodos
 * firts
 * next
 * last
-* 
+
+Estos tiene el codigo para controlar el desplazamiento entre las paginas.
+
 public class RolController implements Serializable, IController {
-
-
 
 }
 
