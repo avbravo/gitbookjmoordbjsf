@@ -1,4 +1,4 @@
-# calendar
+# &lt;jmoordbjsf:calendar/&gt;
 
 * Define un &lt;p:calendar&gt; optimizado para jmoordb.
 
@@ -9,20 +9,18 @@
 | Atributo | Descripción |
 | :--- | :--- |
 | id |  |
-| value  |  |
+| value |  |
 | label |  |
-| mindate  |  |
+| mindate |  |
 | mode default=popup |  |
 | required |  |
-| update  |  |
+| update |  |
 | disabled default=false |  |
 | selectOtherMonths default=true |  |
 | showTodayButton default=true |  |
 | navigator default=true |  |
-| pattern default=dd/MM/yyyy  |  |
-| listener | method-signature=void handleSelect\(org.primefaces.event.SelectEvent\)  |
-
-
+| pattern default=dd/MM/yyyy |  |
+| listener | method-signature=void handleSelect\(org.primefaces.event.SelectEvent\) |
 
 ## Ejemplo:
 
