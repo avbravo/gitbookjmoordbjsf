@@ -7,8 +7,6 @@
 * Se debe indicar la cantidad de filas por pagina 
 * Llevar el control de la pagina actual
 
-
-
 ```java
   Integer page = 1;
   Integer rowPage = 25;
@@ -22,8 +20,6 @@ public List<Integer> getPages() {
         return rolRepository.listOfPage(rowPage);
 }
 ```
-
-
 
 * Los movimientos entre las paginas las controlamos mediante los métodos siguientes.
 
