@@ -286,20 +286,15 @@ Ejemplo de css
 
 ![](/assets/91e8c17a-ca1b-483d-981e-dcbf85f8d73c.png)
 
-
-
 Usar la imágenes en el componente componente
 
 ```java
  <h:graphicImage library="jmoordbjsf" name="add.png"/>
- 
 ```
 
 Si ejecutamos un proyecto, se vería la imagen
 
 ![](/assets/9d793a86-dfa9-4d5e-9470-3ae111d55b9c.png)
-
-
 
 # Probar el Componente
 
@@ -315,37 +310,17 @@ Crear el proyecto: jmoordbjsftest
 
 ![](/assets/85462f5c-de93-4fed-bcce-01b5cc3695f3.png)
 
-
-
 Indicar el nombre del proyecto
-
-
 
 ![](/assets/7489e900-3077-4323-b905-5cb85212667a.png)
 
-
-
-
-
-
-
 PayaraMicro en este ejemplo la versión 5.183 o superior
-
-
 
 ![](/assets/4d60c80e-4e9f-4945-81b3-92bdf1d1d2c2.png)
 
-
-
 En las propiedades del proyecto activamos la configuracion, revisamos la versiòn del JDK, y seleccionamos primefaces como framework
 
-
-
 ![](/assets/718165d3-152c-4e24-b4f0-7a58f69737c2.png)
-
-
-
-
 
 ## Editamos el archivo pom.xml
 
@@ -388,10 +363,6 @@ En las propiedades del proyecto activamos la configuracion, revisamos la versiò
         </repository>
 ```
 
-
-
-
-
 ### En el build
 
 * Actualizar las versiones de los plugins de  maven a las ultimas
@@ -425,9 +396,93 @@ En las propiedades del proyecto activamos la configuracion, revisamos la versiò
 <finalName>jmoordbjsfg</finalName>
 ```
 
+## Crearemos un Controller para manejar los datos
+
+* Ubicarse en el paquete com.avbravo.jmoordbjsftest
+* Dar clic derecho 
+* Seleccionar --&gt;New --&gt;JSF Managed Bean
+
+![](/assets/aeabb31b-60ee-4966-ab07-6debf1e9350d.png)
+
+Lo denominamos MyController en el scope: Request
+
+Se crea la clase MyController.java
+
+```java
+package com.avbravo.jmoordbjsftest;
+
+import javax.inject.Named;
+import javax.enterprise.context.RequestScoped;
+
+/**
+ *
+ * @author avbravo
+ */
+@Named(value = "myContoller")
+@RequestScoped
+public class MyContoller {
+
+    /**
+     * Creates a new instance of MyContoller
+     */
+    public MyContoller() {
+    }
+
+}
+```
+
+* Implemenamos Serializable
+* Agregamos una propiedad para almacenar la opción seleccionada 
+* Creamos un método para mostrar el mensaje
+* Utilizar JsfUtil para enviar mensajes
+
+## Código Final
+
+```java
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package com.avbravo.jmoordbjsftest;
+
+import com.avbravo.avbravoutils.JsfUtil;
+import java.io.Serializable;
+import javax.inject.Named;
+import javax.enterprise.context.RequestScoped;
+
+/**
+ *
+ * @author avbravo
+ */
+@Named
+@RequestScoped
+public class MyController implements Serializable{
+private String seleccion;
+
+    public String getSeleccion() {
+        return seleccion;
+    }
+
+    public void setSeleccion(String seleccion) {
+        this.seleccion = seleccion;
+    }
 
 
 
+
+    /**
+     * Creates a new instance of MyContoller
+     */
+    public MyController() {
+    }
+
+    public String mostrar(){
+        JsfUtil.errorDialog("Seleccion:", seleccion); 
+        return "";
+    }
+}
+```
 
 
 
