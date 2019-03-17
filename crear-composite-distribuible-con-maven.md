@@ -484,5 +484,99 @@ private String seleccion;
 }
 ```
 
+## Ahora editamos el archivo index.xhtml
+
+![](/assets/80f1eb25-44dc-4bc5-8b2d-0ce0b6382d82.png)
+
+
+
+Archivo inicial
+
+```java
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+        <title>Facelet Title</title>
+    </h:head>
+    <h:body>
+        Hello from Facelets
+        <br />
+        <h:link outcome="welcomePrimefaces" value="Primefaces welcome page" />
+    </h:body>
+</html>
+```
+
+* Agregar el namespace jm: para usarlo con los componentes  y el taglib.
+
+```java
+xmlns:jm="http://jmoordbjsf.com/taglib"
+```
+
+* Agregar el &lt;f:view&gt;
+
+```java
+ <f:view contentType="text/html">
+```
+
+* Agregar un &lt;h:form&gt;
+
+```java
+ </h:form>
+```
+
+* Agregamos un &lt;p:message&gt;
+
+```java
+<p:messages id="msg"/>
+```
+
+* Agregar el componente
+
+```java
+ <jm:yesno id="a" value="#{myController.seleccion}"/>
+```
+
+* &lt;p:commandButton&gt; para mostrar la opcion seleccionada por el usuario
+
+```java
+ <p:commandButton value="Mostrar" update="msg" action="#{myController.save()}"/>
+```
+
+## Cogido completo
+
+```
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:jm="http://jmoordbjsf.com/taglib" 
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:p="http://primefaces.org/ui">
+    <f:view contentType="text/html">
+        <h:head>
+            <title>Facelet Title</title>
+        </h:head>
+        <h:body>
+            <h:form>
+                <p:messages id="msg"/>
+                <jm:yesno id="a" value="#{myController.seleccion}"/>
+
+
+                <p:commandButton value="Mostrar" update="msg" action="#{myController.mostrar()}"/>
+            </h:form>
+        </h:body>
+    </f:view>
+</html>
+```
+
+## Ejecutar el proyecto
+
+* Se muestra el componente
+* Al dar clic en el botón se despliega un mensaje con la selección.
+
+![](/assets/ff3e4830-2261-4b95-a628-ae22daf697ce.png)
+
 
 
