@@ -69,5 +69,6 @@
   * [FacultadController.java](controller/facultadcontrollerjava.md)
 * [Development](development.md)
   * [Clases como parametros y metodos en el composite](development/clases-como-parametros-y-metodos-en-el-composite.md)
+  * [Crear composite distribuible con Maven](crear-composite-distribuible-con-maven.md)
   * [Agregar css](development/agregar-css.md)
 
