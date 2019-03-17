@@ -9,6 +9,7 @@ Definimos los atributos
 * controller
 
 * Si el método necesita leer atributos lo podemos pasar  mediante &lt;**f:attribute&gt;**
+
 * en esos métodos los obtenemos
 
 ```java
@@ -27,8 +28,6 @@ action="#{cc.attrs.controller[cc.attrs.next]}"
 ```java
 
 ```
-
-
 
 ## Componente paginator
 
@@ -74,7 +73,7 @@ action="#{cc.attrs.controller[cc.attrs.next]}"
 
 
 
-       
+
         <b:panel>   
 
             <p:remoteCommand  update=":form:dataTable :form:content "
