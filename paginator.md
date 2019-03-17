@@ -24,57 +24,7 @@ public List<Integer> getPages() {
 * Los movimientos entre las paginas las controlamos mediante los métodos siguientes.
 
 ```java
-// <editor-fold defaultstate="collapsed" desc="last">
-    @Override
-    public String last() {
-        try {
-            page = rolRepository.sizeOfPage(rowPage);
-            move();
-        } catch (Exception e) {
-            errorServices.errorMessage(nameOfClass(),nameOfMethod(), e.getLocalizedMessage());
-        }
-        return "";
-    }// </editor-fold>
-// <editor-fold defaultstate="collapsed" desc="first">
-
-    @Override
-    public String first() {
-        try {
-            page = 1;
-            move();
-        } catch (Exception e) {
-            errorServices.errorMessage(nameOfClass(),nameOfMethod(), e.getLocalizedMessage());
-        }
-        return "";
-    }// </editor-fold>
-// <editor-fold defaultstate="collapsed" desc="next">
-
-    @Override
-    public String next() {
-        try {
-            if (page < (rolRepository.sizeOfPage(rowPage))) {
-                page++;
-            }
-            move();
-        } catch (Exception e) {
-            errorServices.errorMessage(nameOfClass(),nameOfMethod(), e.getLocalizedMessage());
-        }
-        return "";
-    }// </editor-fold>
-// <editor-fold defaultstate="collapsed" desc="back">
-
-    @Override
-    public String back() {
-        try {
-            if (page > 1) {
-                page--;
-            }
-            move();
-        } catch (Exception e) {
-            errorServices.errorMessage(nameOfClass(),nameOfMethod(), e.getLocalizedMessage());
-        }
-        return "";
-    }// </editor-fold>
+   
 // <editor-fold defaultstate="collapsed" desc="skip(Integer page)">
 
     @Override
@@ -87,12 +37,29 @@ public List<Integer> getPages() {
         }
         return "";
     }// </editor-fold>
-// <editor-fold defaultstate="collapsed" desc="move">
+    
+   
+   
+```
 
-    @Override
-    public void move() {
+## sizeOfPage
+
+```java
+@Override
+    public Integer sizeOfPage() {
+     return rolRepository.sizeOfPage(rowPage);
+    }/
+```
+
+## move\(Integer page\)
+
+```java
+ @Override
+    public void move(Integer page) {
         try {
-
+            this.page =page;
+            System.out.println("llamo al move");
+              JsfUtil.warningDialog("rolController.move", "page: "+page.toString());
             Document doc;
             switch (loginController.get("searchrol")) {
                 case "_init":
@@ -122,10 +89,12 @@ public List<Integer> getPages() {
             rolDataModel = new RolDataModel(rolList);
 
         } catch (Exception e) {
-            errorServices.errorMessage(nameOfClass(),nameOfMethod(), e.getLocalizedMessage());
+            errorServices.errorMessage(nameOfClass(), nameOfMethod(), e.getLocalizedMessage());
         }
-    }// </editor-fold>
+    }
 ```
+
+## 
 
 ## Componente
 
